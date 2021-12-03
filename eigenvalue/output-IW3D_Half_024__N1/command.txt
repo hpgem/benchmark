@@ -1,0 +1,20 @@
+../../hpgem/cmake-build-debug-complex-petsc/applications/DG-Max/Programs/DGMaxEigen -m meshes/IW3D_Half_024__N1.hpgem  --points 0,0,0 -e 10 --order 1 --structure "Silicon,12.1;Pore,1" -- -eps_ncv 70 -st_ksp_type preonly -st_pc_type lu -st_pc_factor_mat_solver_type mumps
+[   0]@0 DGMax: Proc 0/1 on bach
+[   0]@0 DGMax: Program arguments: 
+../../hpgem/cmake-build-debug-complex-petsc/applications/DG-Max/Programs/DGMaxEigen -m meshes/IW3D_Half_024__N1.hpgem --points 0,0,0 -e 10 --order 1 --structure Silicon,12.1;Pore,1 ../../hpgem/cmake-build-debug-complex-petsc/applications/DG-Max/Programs/DGMaxEigen -eps_ncv 70 -st_ksp_type preonly -st_pc_type lu -st_pc_factor_mat_solver_type mumps
+[   0]@0 DGMax: git ref: refs/heads/preprocessor-add-translation-periodicity (ddf9ce8b514a7a41ad9fc89162fc866a50419830)
+[   0]@0 hpGEM Kernel: ******Mesh creation started!**************
+[   1]@0 hpGEM Kernel: Loaded mesh meshes/IW3D_Half_024__N1.hpgem with 13747 local elements
+[   1]@0 DGMax: Starting assembly
+[  85]@0 hpGEM Kernel: Setting offset for unknown 0 at 0
+[  85]@0 hpGEM Kernel: Setting offset for unknown 1 at 82482
+[  89]@0 DGMax: Eigenvalue solver configured
+[  89]@0 DGMax: Starting k-vector walk
+[  89]@0 DGMax: Solving for k-vector 1/1
+[  89]@0 DGMax: Setting up solve
+[1052]@0 DGMax: Solving
+[1103]@0 DGMax: Number of eigenvalues 19 converged in 1 iterations
+[1103]@0 DGMax: Finished k-vector walk
+freqs:	k index	kx/2pi	ky/2pi	kz/2pi	kmag/2pi	band 0	band 1	band 2	band 3	band 4	band 5	band 6	band 7	band 8	band 9
+freqs:	1	0	0	0	0	0.0478668	0.0494787	0.0542997	0.540648	0.5645060.564802	0.591328	0.591594	0.601803	0.628434	0.628547	0.628878	0.6293150.633584	0.647694	0.661429	0.72922	0.730233	0.765683
+[1104]@0 DGMax: Runtime 1104s
